@@ -57,3 +57,23 @@ exports.deleteCliente = async (req, res) => {
         res.status(500).json({ error: err.message });
     }
 };
+
+exports.loginCliente = async (req, res) => {
+    try {
+        const { email, password } = req.body;
+        const cliente = await Cliente.findOne({
+            where: { email: email },
+        });
+        if (!cliente) {
+            return res.status(404).json({ error: 'Cliente not found' });
+        }
+        // Aquí deberías comparar la contraseña proporcionada con la almacenada.
+        // Esto es solo un ejemplo y deberías usar una forma segura de almacenar y verificar contraseñas, como bcrypt.
+        if (cliente.password !== password) {
+            return res.status(401).json({ error: 'Invalid credentials', cliente: null });
+        }
+        res.json({ message: 'Login successful', cliente: cliente });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+};
