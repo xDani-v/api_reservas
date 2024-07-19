@@ -34,13 +34,13 @@ Para poner en marcha el proyecto, sigue estos pasos:
 
 ## Uso
 
-Una vez que el servidor esté en funcionamiento, podrás acceder a las siguientes rutas para gestionar las reservas:
+Una vez que el servidor esté en funcionamiento, podrás acceder a las siguientes rutas para gestionar las reservas: 
 
-- `GET /reservas`: Obtiene todas las reservas.
-- `GET /reservas/:id`: Obtiene una reserva por su ID.
-- `POST /reservas`: Crea una nueva reserva.
-- `PUT /reservas/:id`: Actualiza una reserva existente.
-- `DELETE /reservas/:id`: Elimina una reserva.
+- `GET /api/modulo`: Obtiene todas las reservas.
+- `GET /api/modulo/:id`: Obtiene una reserva por su ID.
+- `POST /api/modulo`: Crea una nueva reserva.
+- `PUT /api/modulo/:id`: Actualiza una reserva existente.
+- `DELETE /api/modulo/:id`: Elimina una reserva.
 
 ## Contribuir
 
