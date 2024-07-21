@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/db'); // Ajusta la ruta a tu configuración de base de datos
+const sequelize = require('../config/bd'); // Ajusta la ruta a tu configuración de base de datos
 
 class Reserva extends Model { }
 

@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/db'); // Asegúrate de ajustar la ruta a tu configuración de base de datos
+const sequelize = require('../config/bd'); // Asegúrate de ajustar la ruta a tu configuración de base de datos
 
 class Pedido extends Model { }
 

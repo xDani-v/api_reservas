@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/db'); // Asegúrate de que la ruta sea correcta para tu configuración
+const sequelize = require('../config/bd'); // Asegúrate de que la ruta sea correcta para tu configuración
 
 class Mesa extends Model { }
 
