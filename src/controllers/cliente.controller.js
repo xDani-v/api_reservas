@@ -63,7 +63,7 @@ exports.loginCliente = async (req, res) => {
     try {
         const { email, password } = req.body;
         const cliente = await Cliente.findOne({
-            where: { email: email },
+            where: { correo: email },
         });
         if (!cliente) {
             return res.status(404).json({ error: 'Cliente not found' });
