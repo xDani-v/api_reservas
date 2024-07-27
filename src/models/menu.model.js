@@ -26,6 +26,9 @@ Menu.init(
         estado: {
             type: DataTypes.STRING(20),
         },
+        img: {
+            type: DataTypes.STRING(100),
+        },
     },
     {
         sequelize,

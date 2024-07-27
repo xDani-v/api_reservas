@@ -23,6 +23,9 @@ Mesa.init(
         estado: {
             type: DataTypes.STRING(50),
         },
+        img: {
+            type: DataTypes.STRING(100),
+        },
     },
     {
         sequelize,
