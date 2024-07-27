@@ -20,11 +20,8 @@ Reserva.init(
         fecha_reserva: {
             type: DataTypes.DATEONLY,
         },
-        hora_inicio: {
-            type: DataTypes.TIME,
-        },
-        hora_fin: {
-            type: DataTypes.TIME,
+        id_horario: {
+            type: DataTypes.INTEGER,
         },
         numero_personas: {
             type: DataTypes.INTEGER,
